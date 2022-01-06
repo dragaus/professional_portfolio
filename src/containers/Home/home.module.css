@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: black;
+    width: 30vh;
+    height: 30vh;
+}
