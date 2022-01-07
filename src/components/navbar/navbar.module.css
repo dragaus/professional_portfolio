@@ -1,0 +1,21 @@
+.navs{
+    background-color: #9aeb00;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 1rem 1.5rem;
+    font-size: 2rem;
+}
+
+.flex_box{
+    display: flex;
+}

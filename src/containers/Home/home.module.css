@@ -1,10 +1,43 @@
 .main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .circle {
-    border-radius: 50%;
-    background-color: black;
-    width: 30vh;
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 225px;
+    background-color: #373737;
+    width: 450px;
+    height: 450px;
+}
+
+.text {
+    display: flex;
+    flex-flow: column;
+    max-width: 350px;
+    padding: 0 0 0 6rem;
+    text-align: center;
+}
+
+.me_mega {
+    width: 60%;
+    height: auto;
+}
+
+@media (max-width: 800px){
+    .main {
+        flex-flow: column;
+    }
+    .circle {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+    .text {
+        padding: 2rem 0;
+    }
 }

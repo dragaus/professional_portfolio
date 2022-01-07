@@ -1,13 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./navbar.module.css";
 
 const navbar = () => {
   return (
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/about">About me</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+    <div className={styles.navs}>
+      <Link to="/" className={styles.link}>
+        <p>Francisco Castañeda</p>
+      </Link>
+      {/* <div className={styles.flex_box}>
+        <Link to="/about" className={styles.link}>
+          <p>About me</p>
+        </Link>
+        <Link to="/projects" className={styles.link}>
+          <p>My work</p>
+        </Link>
+        <Link to="/contact" className={styles.link}>
+          <p>Conatct</p>
+        </Link>
+      </div> */}
     </div>
   );
 };
