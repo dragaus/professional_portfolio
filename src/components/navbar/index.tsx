@@ -28,16 +28,20 @@ const Navbar = () => {
     open: (height = 1000) => ({
       rigth: 0,
       opacity: 1,
+      height: height,
+      width: "50vw",
       transition: {
-        duration: 2
-      }
+        duration: 1,
+      },
     }),
     closed: {
       rigth: 25,
       opacity: 0,
+      width: 0,
+      height: 0,
       transition: {
-        duration: 0.5
-      }
+        duration: 0.5,
+      },
     },
   };
 
@@ -53,7 +57,7 @@ const Navbar = () => {
             initial={"closed"}
             className={styles.nav_box}
             variants={variants}
-            custom={isOpen ? 100 : 0}
+            custom={isOpen ? "100vh" : 0}
             animate={isOpen ? "open" : "closed"}
           >
             <GrClose
