@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./navbar.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const navbar = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className={styles.navs}>
       <Link to="/" className={styles.link}>
         <p>Francisco Castañeda</p>
       </Link>
+      <GiHamburgerMenu size="2rem" onClick={() => setIsOpen(!isOpen)} />
       {/* <div className={styles.flex_box}>
         <Link to="/about" className={styles.link}>
           <p>About me</p>
@@ -23,4 +27,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

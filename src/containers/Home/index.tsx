@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import { motion } from "framer-motion";
 import me from "../../assets/images/me_mega.png";
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <div className={styles.main}>
@@ -21,7 +21,7 @@ const home = () => {
           />
         </motion.div>
         <motion.div className={styles.text}>
-          <h1>FRANCISCO C. CASTAÑEDA R.</h1>
+          <h1 className={styles.name}>FRANCISCO C. CASTAÑEDA R.</h1>
           <p>GAME DEVELOPER, PROGRAMMER AND PROFESSOR</p>
         </motion.div>
       </div>
@@ -29,4 +29,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

@@ -2,4 +2,7 @@
   background-color: black;
   min-height: 100vh;
   color: #9aeb00;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }

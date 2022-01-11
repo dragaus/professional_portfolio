@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    margin: 1rem 0rem;
 }
 
 .circle {
@@ -18,9 +19,13 @@
 .text {
     display: flex;
     flex-flow: column;
-    max-width: 350px;
+    min-width: 350px;
     padding: 0 0 0 6rem;
     text-align: center;
+}
+
+.name {
+    margin: 2rem 0rem;
 }
 
 .me_mega {
