@@ -4,5 +4,5 @@
   color: #9aeb00;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }

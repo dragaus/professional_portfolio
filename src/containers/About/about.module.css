@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 2rem 1.8rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.about h2 {
+    margin: 2rem 0;
+}
+
+.about p {
+    margin: 1rem 0;
+}

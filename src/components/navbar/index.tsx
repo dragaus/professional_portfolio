@@ -1,28 +1,72 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./navbar.module.css";
+import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
+  const { width } = useWindowDimensions();
   const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false);
+
+  const links = [
+    <Link to="/about" className={styles.link} onClick={closeMenu}>
+      About Me
+    </Link>,
+    <Link to="/projects" className={styles.link} onClick={closeMenu}>
+      Projects
+    </Link>,
+    <Link to="/contact" className={styles.link} onClick={closeMenu}>
+      Conatct
+    </Link>,
+  ];
+
+  const variants = {
+    open: (height = 1000) => ({
+      rigth: 0,
+      opacity: 1,
+      transition: {
+        duration: 2
+      }
+    }),
+    closed: {
+      rigth: 25,
+      opacity: 0,
+      transition: {
+        duration: 0.5
+      }
+    },
+  };
 
   return (
     <div className={styles.navs}>
-      <Link to="/" className={styles.link}>
+      <Link to="/" className={styles.name} onClick={closeMenu}>
         <p>Francisco Castañeda</p>
       </Link>
-      <GiHamburgerMenu size="2rem" onClick={() => setIsOpen(!isOpen)} />
-      {/* <div className={styles.flex_box}>
-        <Link to="/about" className={styles.link}>
-          <p>About me</p>
-        </Link>
-        <Link to="/projects" className={styles.link}>
-          <p>My work</p>
-        </Link>
-        <Link to="/contact" className={styles.link}>
-          <p>Conatct</p>
-        </Link>
-      </div> */}
+      {width <= 820 ? (
+        <div>
+          <GiHamburgerMenu size="2rem" onClick={() => setIsOpen(!isOpen)} />
+          <motion.div
+            initial={"closed"}
+            className={styles.nav_box}
+            variants={variants}
+            custom={isOpen ? 100 : 0}
+            animate={isOpen ? "open" : "closed"}
+          >
+            <GrClose
+              className={styles.close}
+              size="2rem"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+            <div className={styles.nav_list}>{links}</div>
+          </motion.div>
+        </div>
+      ) : (
+        <div className={styles.link_box}>{links}</div>
+      )}
     </div>
   );
 };
