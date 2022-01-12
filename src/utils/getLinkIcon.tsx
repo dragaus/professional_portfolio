@@ -1,4 +1,4 @@
-import { FaAndroid, FaApple, FaLink, FaCode } from "react-icons/fa";
+import { FaAndroid, FaApple, FaLink, FaCode, FaItchIo } from "react-icons/fa";
 import { KindOfLink } from "./types";
 
 export const getLinkIcon = (
@@ -12,6 +12,8 @@ export const getLinkIcon = (
       return <FaApple size={size} />;
     case KindOfLink.Code:
       return <FaCode size={size} />;
+    case KindOfLink.Itch:
+      return <FaItchIo size={size} />;
     default:
       return <FaLink size={size} />;
   }

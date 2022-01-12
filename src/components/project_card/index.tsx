@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardType> = ({ project }) => {
       />
       <div className={["flex_column", styles.card_roles].join(" ")}>
         <p className={styles.card_subtitle}>Role(s)</p>
-        <div className={["flex_row", styles.card_roles].join(" ")}>
+        <div className={styles.card_link_box}>
           {project.roles.map((role) => (
             <p>{getRoleString(role)}</p>
           ))}
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardType> = ({ project }) => {
         <strong>Description</strong>
         <p>{project.description}</p>
       </div>
-      <div className="flex_row">
+      <div className={styles.card_link_box}>
         {project.links.map((link) => {
           return (
             <div className={styles.card_link}>

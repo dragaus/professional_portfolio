@@ -5,10 +5,3 @@
     justify-content: center;
     align-items: center;
 }
-
-@media (max-width: 820px){
-    .card_div{
-        flex-flow: column;
-        flex-wrap: nowrap;
-    }
-}

@@ -6,7 +6,9 @@ export const getRoleString = (role: Roles) => {
       return "Programmer";
     case Roles.Director:
       return "Director";
+    case Roles.Artist:
+      return "Artist";
     default:
-      return "POrogrammer";
+      return "Programmer";
   }
 };

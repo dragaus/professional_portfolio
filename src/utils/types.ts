@@ -24,6 +24,7 @@ export enum KindOfLink {
   Page,
   Android,
   Apple,
+  Itch
 }
 
 export interface ProjectData {
