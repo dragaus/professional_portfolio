@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./about.module.css";
+import me from "../../assets/images/me.jpg";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div className="page">
       <h2>About me</h2>
-      <p>I'm Francisco Castañeda,I'm from Mexico, I'm a Game developer.</p>
+      <img alt="Francisco Castañeda" src={me} className={styles.me_image}/>
+      <p>I'm Francisco Castañeda, I'm from Mexico, I'm a Game developer.</p>
       <p>
         Right now I'm a Unity Lead programmer in Pixframe Studios and professor
         in Coco School Mexico.

@@ -6,3 +6,30 @@
   flex-flow: column;
   justify-content: space-between;
 }
+
+.page {
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem 1.8rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.overflow {
+  flex-wrap: wrap;
+}

@@ -6,6 +6,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    line-height: 1.8rem;
 }
 
 .foots_icon_div {

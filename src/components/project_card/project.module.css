@@ -1,0 +1,61 @@
+.card {
+  background-color: #373737;
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-flow: column;
+  height: fit-content;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+}
+
+.card_title {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.card_subtitle {
+  font-size: 1.2rem 0;
+  margin: 0.4rem;
+}
+
+.card_roles {
+  width: 100%;
+  justify-content: space-around;
+  margin: 0.5rem 0;
+}
+
+.card_image {
+  width: 85%;
+  height: 160px;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+.card_description {
+  background-color: #9aeb00;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.card_link {
+  background-color: #9aeb00;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.link {
+  color: black;
+}

@@ -43,7 +43,8 @@ const Footer = () => {
           <FaItchIo size="3rem" />
         </a>
       </div>
-      <p>2021 Francisco Castañeda. All rights reserved</p>
+      <p>© 2021 Francisco Castañeda.</p>
+      <p>All rights reserved</p>
     </div>
   );
 };

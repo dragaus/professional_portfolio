@@ -20,25 +20,25 @@ const Navbar = () => {
       Projects
     </Link>,
     <Link to="/contact" className={styles.link} onClick={closeMenu}>
-      Conatct
+      Contact
     </Link>,
   ];
 
   const variants = {
-    open: (height = 1000) => ({
-      rigth: 0,
+    open: {
       opacity: 1,
-      height: height,
-      width: "50vw",
+      scale: 1,
+      y: 0,
+      x: 0,
       transition: {
-        duration: 1,
+        duration: 0.8,
       },
-    }),
+    },
     closed: {
-      rigth: 25,
       opacity: 0,
-      width: 0,
-      height: 0,
+      scale: 0,
+      y: "-100%",
+      x: "100%",
       transition: {
         duration: 0.5,
       },
@@ -57,7 +57,6 @@ const Navbar = () => {
             initial={"closed"}
             className={styles.nav_box}
             variants={variants}
-            custom={isOpen ? "100vh" : 0}
             animate={isOpen ? "open" : "closed"}
           >
             <GrClose
