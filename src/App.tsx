@@ -7,6 +7,7 @@ import About from "./containers/About";
 import Contact from "./containers/Contact";
 import Projects from "./containers/Projects";
 import Footer from "./components/footer";
+import Resume from "./containers/Resume";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer/>
     </div>

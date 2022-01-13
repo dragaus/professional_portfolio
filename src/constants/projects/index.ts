@@ -1,11 +1,12 @@
 import { ProjectData, TechStack, Roles, KindOfLink } from "../../utils/types";
+import towi from "../../assets/images/towi.png";
 
 export const projects: ProjectData[] = [
   {
     projectName: "Isla Towi",
-    img: "https://play-lh.googleusercontent.com/AEA0wEiWeuIel_FCQyf0SzsxGGyujBwY7cQ1wJens3kmYUanKH3WTmX1mz8SVawxRg=s180-rw",
+    img: towi,
     roles: [Roles.Programmer],
-    techStack: [TechStack.Csharp, TechStack.Unity],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Play Store",
@@ -45,7 +46,7 @@ export const projects: ProjectData[] = [
     projectName: "The Organization",
     img: "https://img.itch.zone/aW1nLzMzMzg2MjEuZ2lm/315x250%23cm/EiB4Sv.gif",
     roles: [Roles.Programmer, Roles.Director],
-    techStack: [TechStack.Csharp, TechStack.Unity],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Itch.io",
@@ -85,7 +86,7 @@ export const projects: ProjectData[] = [
     projectName: "Alien motion",
     img: "https://img.itch.zone/aW1nLzIzODcwODkucG5n/315x250%23c/uoGf8m.png",
     roles: [Roles.Programmer, Roles.Director, Roles.Artist],
-    techStack: [TechStack.Csharp, TechStack.Unity],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Itch.io",
@@ -105,7 +106,7 @@ export const projects: ProjectData[] = [
     projectName: "No te infectes",
     img: "https://img.itch.zone/aW1nLzMxNzI0OTEucG5n/original/4kwARW.png",
     roles: [Roles.Programmer, Roles.Director],
-    techStack: [TechStack.Csharp, TechStack.Unity],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Itch.io",
@@ -120,7 +121,7 @@ export const projects: ProjectData[] = [
     projectName: "Nano Battles",
     img: "https://play-lh.googleusercontent.com/B0_vIHyM5XmMIEdewWI6eGflBUnxiYAZXwTD8zQMUnbYZqOF9y3vFSBmGiPbLXh0Ado=w720-h310-rw",
     roles: [Roles.Programmer, Roles.Director, Roles.Artist],
-    techStack: [TechStack.Csharp, TechStack.Csharp],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Play Store",
@@ -132,10 +133,40 @@ export const projects: ProjectData[] = [
       "Mobile local multiplayer made with unity and pixel art, the idea of the game is to simple made multiple games with one button interaction.",
   },
   {
+    projectName: "Planet Bakery",
+    img: "https://img.itch.zone/aW1nLzMyNzg2NTEucG5n/315x250%23c/D6GG6m.png",
+    roles: [Roles.Programmer, Roles.Director, Roles.Artist],
+    techStack: [TechStack.Unity, TechStack.Csharp],
+    links: [
+      {
+        label: "Itch.io",
+        kind: KindOfLink.Itch,
+        uri: "https://barricagames.itch.io/planet-bakery",
+      },
+    ],
+    description:
+      "This is a game made with Unity and puts you as an donut maker alien.",
+  },
+  {
+    projectName: "Jungle Jam",
+    img: "https://img.itch.zone/aW1nLzIwNTc2NzAucG5n/315x250%23c/auclWq.png",
+    roles: [Roles.Programmer, Roles.Director, Roles.Artist],
+    techStack: [TechStack.Unity, TechStack.Csharp],
+    links: [
+      {
+        label: "Itch.io",
+        kind: KindOfLink.Itch,
+        uri: "https://barricagames.itch.io/junglejam",
+      },
+    ],
+    description:
+      "This is a game made for the Social Game Jam using Tiltspot.tv plugin which makes your mobile a specific controller.",
+  },
+  {
     projectName: "Food Marathon",
     img: "https://play-lh.googleusercontent.com/7FXGmS9mXkdPekZ59KICgxKZLDuvf78lOormWE9O0-9j-UQyL21UaXJB3GE0HZm5GyM=w720-h310-rw",
     roles: [Roles.Programmer, Roles.Director],
-    techStack: [TechStack.Csharp, TechStack.Csharp],
+    techStack: [TechStack.Unity, TechStack.Csharp],
     links: [
       {
         label: "Play Store",
