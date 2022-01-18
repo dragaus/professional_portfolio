@@ -1,5 +1,5 @@
 import { ProjectData, TechStack, Roles, KindOfLink } from "../../utils/types";
-import towi from "../../assets/images/towi.png";
+import towi from "../../assets/images/projects/towi.png";
 
 export const projects: ProjectData[] = [
   {

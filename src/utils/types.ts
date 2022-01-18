@@ -42,3 +42,10 @@ export interface LinkData {
   kind: KindOfLink;
   uri: string;
 }
+
+export interface CertificateData {
+  courseName: string;
+  finishDate: string;
+  certificateLink: string;
+  imageLink?: string;
+}

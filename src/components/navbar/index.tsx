@@ -22,6 +22,9 @@ const Navbar = () => {
     <Link to="/contact" className={styles.link} onClick={closeMenu}>
       Contact
     </Link>,
+    <Link to="/resume" className={styles.link} onClick={closeMenu}>
+      Resume
+    </Link>,
   ];
 
   const variants = {

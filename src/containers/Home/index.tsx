@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.css";
 import { motion } from "framer-motion";
-import me from "../../assets/images/me_mega.png";
+import me from "../../assets/images/personal/me_mega.png";
 
 const Home = () => {
   return (

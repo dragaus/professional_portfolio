@@ -1,0 +1,26 @@
+.certificate_card {
+  background-color: #373737;
+  width: 30%;
+  max-width: 300px;
+  display: flex;
+  flex-flow: column;
+  height: fit-content;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+  cursor: pointer;
+}
+
+.certificate_card_frame {
+    background-color: #9aeb00;
+    padding: 2rem;
+    width: 90%;
+    border-radius: 1rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.certificate_card_frame img {
+    width: 100%;
+}

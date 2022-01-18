@@ -30,6 +30,11 @@
   align-items: center;
 }
 
-.overflow {
+.wrapped {
   flex-wrap: wrap;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
 }
