@@ -1,13 +1,16 @@
 import { CertificateData } from "../../utils/types";
 import QYDTFWXRTHDR from "../../assets/images/certificates/QYDTFWXRTHDR.png";
 import RLRZGTM9AA4Z from "../../assets/images/certificates/RLRZGTM9AA4Z.png";
+import EEY7GFJQXQEA from "../../assets/images/certificates/EEY7GFJQXQEA.png";
+import LXEL4VCMAPQS from "../../assets/images/certificates/LXEL4VCMAPQS.png";
+import SZM2HKBER2C7 from "../../assets/images/certificates/SZM2HKBER2C7.png";
 
 const udemyLink = (id: string) => `https://www.udemy.com/certificate/${id}`;
 const udemyImage = (id: string) =>
   `https://udemy-certificate.s3.amazonaws.com/image/${id}.jpg`;
-const courseraLink = (id: string) => `https://www.coursera.org/account/accomplishments/certificate/${id}`;
-const courseraImage = (id: string) =>
-  `https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~${id}/CERTIFICATE_LANDING_PAGE~${id}.jpeg`;
+
+const courseraLink = (id: string) =>
+  `https://www.coursera.org/account/accomplishments/certificate/${id}`;
 
 export const certificates: CertificateData[] = [
   {
@@ -54,19 +57,19 @@ export const certificates: CertificateData[] = [
   },
   {
     certificateLink: courseraLink("SZM2HKBER2C7"),
-    imageLink: courseraImage("SZM2HKBER2C7"),
+    imageLink: SZM2HKBER2C7,
     courseName: "Ruby on Rails: An Introduction",
     finishDate: "06/2020",
   },
   {
     certificateLink: courseraLink("EEY7GFJQXQEA"),
-    imageLink: courseraImage("EEY7GFJQXQEA"),
+    imageLink: EEY7GFJQXQEA,
     courseName: "Introduction to XR: VR, AR, and MR Foundations",
     finishDate: "06/2020",
   },
   {
     certificateLink: courseraLink("LXEL4VCMAPQS"),
-    imageLink: courseraImage("LXEL4VCMAPQS"),
+    imageLink: LXEL4VCMAPQS,
     courseName: "Introduction to Game Development",
     finishDate: "06/2020",
   },
