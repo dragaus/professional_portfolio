@@ -56,6 +56,18 @@ export const certificates: CertificateData[] = [
     finishDate: "05/2020",
   },
   {
+    certificateLink: udemyLink("UC-WJ60372J"),
+    imageLink: udemyImage("UC-WJ60372J"),
+    courseName: "Producción de videojuegos para principiantes",
+    finishDate: "05/2020",
+  },
+  {
+    certificateLink: udemyLink("UC-7NXUOLNI"),
+    imageLink: udemyImage("UC-7NXUOLNI"),
+    courseName: "Desarrollo de videojuegos con Phaser 3 - Iniciación",
+    finishDate: "05/2020",
+  },
+  {
     certificateLink: courseraLink("SZM2HKBER2C7"),
     imageLink: SZM2HKBER2C7,
     courseName: "Ruby on Rails: An Introduction",

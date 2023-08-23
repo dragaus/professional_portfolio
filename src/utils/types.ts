@@ -49,3 +49,16 @@ export interface CertificateData {
   certificateLink: string;
   imageLink?: string;
 }
+
+export interface Position {
+  positionName: string;
+  projectName: string;
+  description: string;
+}
+
+export interface Experience {
+  companyName: string;
+  workPeriod: string;
+  positions: Position[];
+  website: string;
+}

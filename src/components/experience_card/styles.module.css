@@ -1,0 +1,41 @@
+.experience_card {
+    background-color: #9aeb00;
+    color: black;
+    width: 85%;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+.experiences {
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+}
+
+.experience {
+    margin: 1rem;
+    width: 90%;
+}
+
+.company_name {
+    font-size: 2rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}

@@ -29,14 +29,14 @@ export const projects: ProjectData[] = [
   },
   {
     projectName: "Matematia",
-    img: "https://matematia.com/static/media/DrAyax-01.fd457cf8.svg",
+    img: "https://matematia.firebaseapp.com/static/media/MATEMATIA.1232d4b5.svg",
     roles: [Roles.Programmer],
     techStack: [TechStack.Ts, TechStack.React, TechStack.Node],
     links: [
       {
         label: "Page",
         kind: KindOfLink.Page,
-        uri: "https://matematia.com/",
+        uri: "https://matematia.firebaseapp.com/",
       },
     ],
     description:

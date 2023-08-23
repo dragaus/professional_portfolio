@@ -12,13 +12,27 @@
   cursor: pointer;
 }
 
+.certificate_card_title {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  width: 90%;
+  height: 5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.certificate_card_expedition {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
 .certificate_card_frame {
     background-color: #9aeb00;
-    padding: 2rem;
-    width: 90%;
+    padding: 1.2rem;
+    width: 85%;
     border-radius: 1rem;
     height: auto;
-    margin: 2rem;
+    margin: 1.2rem;
 }
 
 .certificate_card_frame img {

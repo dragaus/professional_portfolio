@@ -11,8 +11,7 @@ const About = () => {
         I'm Francisco Castañeda, I'm from Mexico, I'm a Game developer.
       </p>
       <p className={styles.about_text}>
-        Right now I'm a Unity Lead programmer in Pixframe Studios and professor
-        in Coco School Mexico.
+        Right now I'm a Senior Unity Developer in Tech9
       </p>
       <p className={styles.about_text}>
         I'm particulary passionate about mobile games, ar and gameplay.

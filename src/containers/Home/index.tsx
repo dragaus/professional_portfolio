@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import { motion } from "framer-motion";
 import me from "../../assets/images/personal/me_mega.png";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className={styles.main}>
       <motion.div

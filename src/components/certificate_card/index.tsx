@@ -14,11 +14,13 @@ const CertificateCard: React.FC<CertificateCardInterface> = ({
       onClick={() => window.open(certificate.certificateLink, "_blank")}
       className={styles.certificate_card}
     >
-      <p>{certificate.courseName}</p>
+      <p className={styles.certificate_card_title}>{certificate.courseName}</p>
       <div className={styles.certificate_card_frame}>
         <img src={certificate.imageLink} alt={certificate.courseName} />
       </div>
-      <p>Finish: {certificate.finishDate}</p>
+      <p className={styles.certificate_card_expedition}>
+        Expedition date: {certificate.finishDate}
+      </p>
     </div>
   );
 };
